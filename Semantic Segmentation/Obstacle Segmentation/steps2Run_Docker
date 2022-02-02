@@ -1,0 +1,32 @@
+
+#-----------------------------------------------------------------------------------------------------------
+
+
+#STEPS TO CREATE AND RUN DOCKER IMAGE
+#Host machine:
+#   docker build -t tf2 .
+#   docker run --gpus all -it --rm --user $(id -u):$(id -g) --group-add users -p 8888:8888 -p 6006:6006 -v /home/1644451/Documents:/home/tensorflow/Documents tf2_ss bash
+
+# docker run --gpus all -it --rm --user $(id -u):$(id -g) --group-add users --network=host -v /home/1644451/Documents:/home/tensorflow/Documents tf2_ss bash
+
+
+#We used some specific flags in this command:
+#-it is used to open an interactive terminal
+#--rm will delete the container when finished
+#--name is used to name the container with a custom name
+#--network=host is used to have access to the Internet in the container (same network as the host machine)
+# -v is the mounting directory
+
+#Inside the Container : 
+#   cd Documents/Tensorflow #folder_you_need_in_jupter_notebook
+#   jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
+
+#NOTE: above command works even without no-browser flag!
+
+#Host machine access this url : 
+#   localhost:8888/tree‌​ 
+
+
+# http://127.0.0.1:8889/?token=cf1bf033ffd3e52b29d0813139d6475d12f1d42b1523dd10
+
+# watch -n 0.1s nvitop
