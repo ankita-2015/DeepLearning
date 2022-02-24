@@ -1,19 +1,21 @@
 ## A Deep Learning project on Multi-class Semantic Segmentation on [Indian Driving Dataset](https://idd.insaan.iiit.ac.in/dataset/details/)
 
 ## About Dataset
-I have used dataset which is available at [kaggle](https://www.kaggle.com/abhishekprajapat/idd-20k)
+I have used dataset which is available at [kaggle IDD dataset](https://www.kaggle.com/abhishekprajapat/idd-20k)
 
 Dataset provides image resolution of (**width**:1920, **height**:1080):
   1. Training Images: 5966
   2. Validation Images: 1016
+  
 I have used Validation images as Test Set for evaluation purpose and For training i have splitted Training images to train(4950) and Val set(1016)
+
 The label image consists of 26 classes.
 
 For this project, i have customized the number of classes:
 1. There are 2 main classes: 
 
       - **Road** (Drivable)
-      - **Moving objects** (Living things and Vehicles category as per this [offical dataset](https://idd.insaan.iiit.ac.in/dataset/details/))
+      - **Moving objects** (Living things and Vehicles category as per this [offical website](https://idd.insaan.iiit.ac.in/dataset/details/))
       - **Background** (Rest of the categories as background which includes Non Drivable, Road Side Objects, Sky, Far Objects)
 
 After mapping it to 3 categories, label image looks like: 
@@ -48,11 +50,11 @@ Script to customize number of classes for IDD dataset is available at [Scripts/D
 
 I have Evaluated models results on datasets:
   - IDD validation set (NOT used in training)
-  - Cityscapes test set - 500 images - [prepare cityscape dataset](https://github.com/ankita-2015/DeepLearning/blob/main/Semantic%20Segmentation/Obstacle%20Segmentation/Scripts/DatasetPreparation/prepare_Cityscape_dataset.ipynb)
-  - BDD100k test set - 1000 images - [prepare_BDD100k dataset](https://github.com/ankita-2015/DeepLearning/blob/main/Semantic%20Segmentation/Obstacle%20Segmentation/Scripts/DatasetPreparation/prepare_BDD_dataset.ipynb)
+  - [Cityscapes](https://www.kaggle.com/xiaose/cityscapes) test set - 500 images - [prepare cityscape dataset](https://github.com/ankita-2015/DeepLearning/blob/main/Semantic%20Segmentation/Obstacle%20Segmentation/Scripts/DatasetPreparation/prepare_Cityscape_dataset.ipynb)
+  - [BDD100k](https://www.kaggle.com/solesensei/solesensei_bdd100k) test set - 1000 images - [prepare_BDD100k dataset](https://github.com/ankita-2015/DeepLearning/blob/main/Semantic%20Segmentation/Obstacle%20Segmentation/Scripts/DatasetPreparation/prepare_BDD_dataset.ipynb)
 
 
-
+ 
 
 
 
