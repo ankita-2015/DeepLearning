@@ -16,10 +16,8 @@ For this project, i have customized the number of classes:
       - **Moving objects** (Living things and Vehicles category as per this [offical dataset](https://idd.insaan.iiit.ac.in/dataset/details/))
       - **Background** (Rest of the categories as background which includes Non Drivable, Road Side Objects, Sky, Far Objects)
 
-After mapping it to 3 categories, label image looks like:
+After mapping it to 3 categories, label image looks like: 
 
-![image](https://user-images.githubusercontent.com/29517840/155578431-8df8e5da-84bc-425b-a2bb-bd20928eeee5.png)
+![image](https://user-images.githubusercontent.com/29517840/155579163-ac7d5251-1536-423a-8a7b-5140c9c9e503.png)
 
-![image](https://user-images.githubusercontent.com/29517840/155578536-2906a852-bd17-4dad-be8c-7b354650913c.png)
-
-
+Script to customize number of classes for IDD dataset is available at [/Scripts/DatasetPreparation/prepare_IDD_dataset.ipynb](https://github.com/ankita-2015/DeepLearning/blob/main/Semantic%20Segmentation/Obstacle%20Segmentation/Scripts/DatasetPreparation/prepare_IDD_dataset.ipynb)
