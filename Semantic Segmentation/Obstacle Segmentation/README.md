@@ -56,7 +56,7 @@ I have Evaluated models results on datasets:
 ## Results
 
 | Model |Images Count|mIoU|Precision|Recall|F1-score (Dice-score)|F2-score|
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 |IDD_Unet_efficientnetB6_alpha1_102epoch_IDD|1016|0.935507686|0.966729734|0.964703715|0.964771986|0.964548665|
 |IDD_Unet_efficientnetB1_alpha1_169epoch_IDD|1016|0.930382308|0.962567004|0.963652336|0.961783635|0.962565754|
 |IDD_Unet_efficientnetB0_alpha1_172epoch_IDD|1016|0.929789305|0.964161625|0.961232964|0.961725158|0.961219339|
